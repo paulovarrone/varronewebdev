@@ -314,6 +314,10 @@ body {
     cursor: pointer;
 }
 
+.icon {
+    width: 64px;
+}
+
 .icon:hover {
     transform: scale(1.1);
     transition-duration: 700ms;
