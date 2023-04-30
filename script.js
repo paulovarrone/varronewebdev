@@ -13,7 +13,7 @@ function mostrarEsconder() {
 
 // add an eventListener scroll
 window.addEventListener("scroll", function() {
-  // hide menu and red (x)
+  // hide menu and red (x) when scroll
   menuHome.style.display = "none";
   menuToggle.classList.remove('active');
 });
