@@ -11,13 +11,11 @@ function mostrarEsconder() {
   
 }
 
-// Adiciona um ouvinte de evento de rolagem à janela
+// add an eventListener scroll
 window.addEventListener("scroll", function() {
-  if (window.scrollY > 0) {
-    // Esconde o menu e botao x vermelho
-    menuHome.style.display = "none";
-    menuToggle.classList.remove('active');
-  }
+  // hide menu and red (x)
+  menuHome.style.display = "none";
+  menuToggle.classList.remove('active');
 });
 
 let toggleElements = document.querySelectorAll('.toggle');
