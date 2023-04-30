@@ -401,6 +401,7 @@ li:hover::after {
 .aboutIcons {
     margin-left: 92px;
     margin-top: 15px;
+    width: 128px;
 }
 
 #design, #specificity, #project {
