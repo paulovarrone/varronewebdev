@@ -425,3 +425,28 @@ li:hover::after {
     width: 300px;
     margin: 50px 0;
 }
+
+#gImgOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#gImgTwo {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.gOne {
+    width: 100%;
+}
+
+.gTwo {
+    width: 100%;
+}
