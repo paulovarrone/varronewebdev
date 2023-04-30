@@ -7,7 +7,18 @@ function mostrarEsconder() {
  } else {
     menuHome.style.display = "flex";
   }
+
+  
 }
+
+// Adiciona um ouvinte de evento de rolagem à janela
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 0) {
+    // Esconde o menu e botao x vermelho
+    menuHome.style.display = "none";
+    menuToggle.classList.remove('active');
+  }
+});
 
 let toggleElements = document.querySelectorAll('.toggle');
     for (let i = 0; i < toggleElements.length; i++) {
@@ -18,6 +29,6 @@ let toggleElements = document.querySelectorAll('.toggle');
 let menuToggle = document.querySelector('.toggle');
     menuToggle.onclick = function() {
     menuToggle.classList.toggle('active')
-
+      
 }    
 
