@@ -83,7 +83,7 @@ setInterval(() => {
   currentSlide = (currentSlide + 1) % slides.length;
   // muda para o próximo slide
   changeSlide(currentSlide);
-}, 4000);
+}, 5000);
 
 // adiciona o manipulador de eventos de clique em cada elemento com a classe "bar"
 bars.forEach((bar, index) => {
