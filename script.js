@@ -11,6 +11,17 @@ function mostrarEsconder() {
   
 }
 
+
+
+
+
+
+
+
+
+
+
+
 // add an eventListener scroll
 window.addEventListener("scroll", function() {
   // hide menu and red (x) when scroll
@@ -31,6 +42,12 @@ let menuToggle = document.querySelector('.toggle');
 }    
 
 
+
+
+
+
+
+
 // seleciona todos os elementos de input com o nome "slide"
 const slides = document.querySelectorAll('input[name="slide"]');
 
@@ -49,14 +66,14 @@ function changeSlide(slideIndex) {
     slides[slideIndex].checked = true;
     // atualiza o índice do slide atual
     currentSlide = slideIndex;
-
-    // remove a classe "active" de todas as barras
-    bars.forEach((bar) => {
-      bar.classList.remove('active');
-    });
-
-    // adiciona a classe "active" para a barra correspondente ao slide atual
+    // atualiza a classe CSS do elemento "bar" correspondente ao slide
     bars[currentSlide].classList.add('active');
+    // remove a classe CSS "active" de todos os outros elementos "bar"
+    for (let i = 0; i < bars.length; i++) {
+      if (i !== currentSlide) {
+        bars[i].classList.remove('active');
+      }
+    }
   }
 }
 
@@ -66,22 +83,26 @@ setInterval(() => {
   currentSlide = (currentSlide + 1) % slides.length;
   // muda para o próximo slide
   changeSlide(currentSlide);
-}, 5000);
+}, 4000);
 
 // adiciona o manipulador de eventos de clique em cada elemento com a classe "bar"
 bars.forEach((bar, index) => {
   bar.addEventListener('click', () => {
     // muda para o slide correspondente ao índice da barra clicada
     changeSlide(index);
-
-    // remove a classe "active" de todas as barras
-    bars.forEach((bar) => {
-      bar.classList.remove('active');
-    });
-
-    // adiciona a classe "active" para a barra correspondente à barra clicada
+    // adiciona a classe CSS "active" ao elemento "bar" clicado
     bar.classList.add('active');
+    // remove a classe CSS "active" de todos os outros elementos "bar"
+    for (let i = 0; i < bars.length; i++) {
+      if (i !== index) {
+        bars[i].classList.remove('active');
+      }
+    }
   });
 });
+
+// adiciona a classe CSS "active" ao primeiro elemento "bar" quando a página carrega
+bars[0].classList.add('active');
+
 
 
