@@ -468,7 +468,9 @@ li:hover::after {
     gap: 20px;
     margin-top: -25px;
     display: flex;
-     
+     position: absolute;
+     margin-top: 550px;
+    
   }
  
   .bar {
@@ -482,6 +484,10 @@ li:hover::after {
   .bar:hover {
     background: white;
   }
+
+  .bar.active {
+    background: white;
+ }
 
   input {
     display: none;
@@ -526,3 +532,4 @@ li:hover::after {
  #slide6:checked ~ .s1 {
     margin-left: -82.2%;
  }
+
