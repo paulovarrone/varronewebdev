@@ -479,6 +479,7 @@ li:hover::after {
     border: 2px solid white;
     border-radius: 10px;
     transition: .7s;
+    cursor: pointer;
   }
 
   .bar:hover {
