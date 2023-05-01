@@ -515,7 +515,7 @@ li:hover::after {
  }
 
  #slide2:checked ~ .s1 {
-    margin-left: -16.4%;
+    margin-left: -16.47%;
  }
 
  #slide3:checked ~ .s1 {
@@ -523,7 +523,7 @@ li:hover::after {
  }
 
  #slide4:checked ~ .s1 {
-    margin-left: -49.3%;
+    margin-left: -49.4%;
  }
 
  #slide5:checked ~ .s1 {
@@ -531,6 +531,6 @@ li:hover::after {
  }
 
  #slide6:checked ~ .s1 {
-    margin-left: -82.2%;
+    margin-left: -82.3%;
  }
 
