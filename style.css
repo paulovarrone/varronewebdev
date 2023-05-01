@@ -480,7 +480,7 @@ li:hover::after {
   }
 
   .bar:hover {
-    background: #204a6a;
+    background: white;
   }
 
   input {
