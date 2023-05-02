@@ -170,7 +170,7 @@ li:hover::after {
     flex-direction: column;
     align-items: center;
     color: var(--color);
-    padding-top: 130px;
+    padding: 130px;
 }
 
 #projects {
