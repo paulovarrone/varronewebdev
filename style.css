@@ -126,7 +126,6 @@ body {
     height: 115px;
     background: var(--bg-menuHome);
     margin-left: 0px;
-    transition: height 0.7s ease-in-out;
     overflow: hidden;
 }
 
