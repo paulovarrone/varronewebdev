@@ -115,6 +115,8 @@ body {
 
 #web {
     font-family: var(--ffweb);
+    text-decoration: none;
+    color: white;
 }
 
 #menuHome {
