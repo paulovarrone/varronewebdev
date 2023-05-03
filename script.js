@@ -1,4 +1,4 @@
-/*function mostrarEsconder() {
+function mostrarEsconder() {
   let toggle = this.nextElementSibling;
   let menuHome = document.getElementById("menuHome");
 
@@ -7,10 +7,10 @@
   } else {
     $(menuHome).slideDown();
   }
-}*/
+}
 
 
-
+/*
 // open and close menu
 function mostrarEsconder() {
  let toggle = this.nextElementSibling;
@@ -22,7 +22,7 @@ function mostrarEsconder() {
   }
 
 
-}
+}*/
 
 
 
