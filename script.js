@@ -1,3 +1,16 @@
+/*function mostrarEsconder() {
+  let toggle = this.nextElementSibling;
+  let menuHome = document.getElementById("menuHome");
+
+  if (menuHome.style.display == "flex" || $(menuHome).is(":visible")) {
+    $(menuHome).slideUp();
+  } else {
+    $(menuHome).slideDown();
+  }
+}*/
+
+
+
 // open and close menu
 function mostrarEsconder() {
  let toggle = this.nextElementSibling;
@@ -8,12 +21,17 @@ function mostrarEsconder() {
     menuHome.style.display = "flex";
   }
 
-  
+
 }
 
 
 
-
+// background menu hamburguer and close(X)
+let menuToggle = document.querySelector('.toggle');
+    menuToggle.onclick = function() {
+    menuToggle.classList.toggle('active')
+      
+}    
 
 
 
@@ -34,12 +52,7 @@ let toggleElements = document.querySelectorAll('.toggle');
     toggleElements[i].addEventListener('click', mostrarEsconder);
 }
 
-// background menu hamburguer and close(X)
-let menuToggle = document.querySelector('.toggle');
-    menuToggle.onclick = function() {
-    menuToggle.classList.toggle('active')
-      
-}    
+
 
 
 
