@@ -10,8 +10,8 @@ function mostrarEsconder() {
 }
 
 
-
-/* // open and close menu
+/*
+// open and close menu
 function mostrarEsconder() {
  let toggle = this.nextElementSibling;
 
