@@ -81,6 +81,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .toggle.active {
@@ -130,22 +131,6 @@ body {
     margin-left: 0px;
     overflow: hidden;
 }
-
-li::after {
-    content: " ";
-    width: 0px;
-    height: 4px;
-    background: var(--borderbtm-menuhome);
-    position: absolute;
-    margin-top: 24px;
-    left: 0;
-    transition: 0.5s ease-in-out;
-}
-
-li:hover::after {
-    width: 100px;
-}
-
 
 #menu {
     display: flex;
