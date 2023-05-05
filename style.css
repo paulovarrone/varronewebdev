@@ -121,6 +121,7 @@ a {
     background: var(--bg-menuHome);
     margin-left: 0px;
     overflow: hidden;
+    display: none;
 }
 
 #menu {
@@ -139,6 +140,11 @@ a {
   padding: 4px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+#menu a li:hover {
+    background: #5c84a1;
+    transition: background 1s ease;
 }
 
 #home {
