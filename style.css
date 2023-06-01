@@ -22,7 +22,7 @@ html {
     --bg-insidecard: linear-gradient(190deg, rgba(2,0,36,1) 0%, rgb(24, 93, 121) 50%, rgb(3, 3, 3) 100%);
     --bg-back:linear-gradient(200deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     --bg-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    
+    --bg-new: linear-gradient(89deg, #0d151b, #204a6a);
 
     --borderback: rgba(255, 255, 255, 0.18);
     --borderbtm-menuhome: rgb(0, 1, 94);
@@ -61,6 +61,7 @@ body {
     height: 90px;
     align-items: center;
     justify-content: space-around;
+    z-index: 2;
 }
 
 .toggle {
@@ -96,8 +97,13 @@ body {
     align-items: center;
 }
 
-#world img {
+#ww {
     width: 64px;
+}
+
+#ww:hover {
+    transition: transform 0.7s;
+    transform: rotate(360deg);
 }
 
 #web {
@@ -116,8 +122,8 @@ a {
     border-right: 2px solid var(--borderbtm-menuhome);
     position: fixed;
     top: 90px;
-    width: 100px;
-    height: 115px;
+    width: 121px;
+    height: 146px;
     background: var(--bg-menuHome);
     margin-left: 0px;
     overflow: hidden;
@@ -127,10 +133,11 @@ a {
 #menu {
     display: flex;
     list-style: none;
-    gap: 5px;
+    gap: 20px;
     font-size: 20px;
     margin: 5px 5px;
     flex-direction: column;
+    width: 100%;
 }
 
 #menu a {
@@ -149,12 +156,17 @@ a {
 
 #home {
     height: 850px;
-    width: 100%; 
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     color: var(--color);
-    padding: 130px;
+    padding-top: 130px;
+}
+
+@media (min-width: 1024px) {
+    #home {
+        height: 810px;
+    }
 }
 
 #projects {
@@ -168,14 +180,45 @@ a {
 }
 
 #about {
-    height: 1800px;
     width: 100%;
     padding-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #center {
     display: flex;
     flex-direction: column;
+    margin: auto;
+}
+
+#pb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 1024px) {
+    #pb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #center {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        gap: 250px;
+    }
+
+    #txtHome {
+        text-align: justify;
+        width: 300px;
+    }
+
+    
 }
 
 #card {
@@ -292,10 +335,6 @@ a {
     margin: -45px 20px;
 }
 
-#home #center {
-    width: 300px;
-}
-
 #home #center #name {
     color: var(--color-h1);
     text-align: center;
@@ -307,14 +346,19 @@ a {
 
 #home #center #txtHome {
     text-align: justify;
+    width: 300px;
 }
 
 #home #center #social {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 50px 0;
     cursor: pointer;
+}
+
+#home #center a {
+    text-align: center;
 }
 
 .icon {
@@ -351,8 +395,14 @@ a {
 }
 
 #contentAbout {
-    width: 300px;
+    
     margin: auto;
+}
+@media(min-width: 1024px) {
+
+    #contentAbout {
+        width: 100%;
+    }
     
 }
 
@@ -364,6 +414,19 @@ a {
 #about #aboutTxt {
     margin-top: 50px;
     text-align: justify;
+    width: 300px;
+}
+
+@media (min-width: 1024px) {
+    #about #aboutTxt {
+        margin: 50px auto;
+        width: 300px;
+    }
+
+    #whiteBoards {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 .wbTitle {
@@ -389,7 +452,8 @@ a {
 }
 
 #design, #specificity, #project {
-    
+    display: flex;
+    flex-direction: column;
     width: 300px;
     height: 440px;
     background: var(--bg-container);
@@ -452,9 +516,9 @@ a {
     gap: 20px;
     margin-top: -25px;
     display: flex;
-     position: absolute;
-     margin-top: 550px;
-    
+    position: absolute;
+    margin-top: 550px;
+    z-index: 1;
   }
  
   .bar {
