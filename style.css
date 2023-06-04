@@ -374,6 +374,7 @@ a {
 @media (min-width: 1024px) {
     #home .center #txtHome {
         width: 400px;
+        line-height: 30px;
     }
 }
 
@@ -424,7 +425,7 @@ a {
 }
 
 #home #me{
-    border-radius: 40px;
+    border-radius: 0 30% 0 30%;
     width: 300px;
     
 }
