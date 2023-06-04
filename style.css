@@ -212,13 +212,6 @@ a {
         margin: auto;
         gap: 250px;
     }
-
-    #txtHome {
-        text-align: justify;
-        width: 300px;
-    }
-
-    
 }
 
 #card {
@@ -354,6 +347,12 @@ a {
     position: relative;
 }
 
+@media (min-width: 1024px) {
+    #home .center #job {
+        text-align: left;
+    }
+}
+
 #job::before {
     content: '';
     position: absolute;
@@ -370,6 +369,12 @@ a {
     text-align: justify;
     width: 300px;
     position: relative;
+}
+
+@media (min-width: 1024px) {
+    #home .center #txtHome {
+        width: 400px;
+    }
 }
 
 #txtHome::before {
@@ -478,9 +483,20 @@ a {
     }
 }
 
+@media(min-width: 1024px) {
+    #name {
+        font-size: 60px;
+    }
+
+    #job {
+        font-size: 30px;
+    }
+}
+
 #contentAbout {
     margin: auto;
 }
+
 @media(min-width: 1024px) {
 
     #contentAbout {
