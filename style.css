@@ -186,6 +186,18 @@ a {
     justify-content: center;
 }
 
+.flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 50px;
+}
+
+#br, #uk {
+    width: 50px;
+}
+
 .center {
     display: flex;
     flex-direction: column;
@@ -496,12 +508,18 @@ a {
 
 #contentAbout {
     margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media(min-width: 1024px) {
 
     #contentAbout {
         width: 100%;
+        display: block;
+        
     }
     
 }
@@ -510,14 +528,14 @@ a {
 #about #aboutTitle {
     text-align: center;
     color: var(--color-h1);
-    margin-top: 320px;
+    margin-top: 420px;
 }
 
 @media(min-width: 1024px){
     #about #aboutTitle {
         text-align: center;
         color: var(--color-h1);
-        margin-top: 0px;
+        margin-top: 120px;
     }
 }
 
@@ -664,7 +682,7 @@ a {
     gap: 20px;
     display: flex;
     position: absolute;
-    margin-top: 760px;
+    margin-top: 700px;
     z-index: 1;
   }
 
