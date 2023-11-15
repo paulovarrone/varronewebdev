@@ -771,3 +771,8 @@ a {
     filter: blur(0);
     transform: translateX(0);
  }
+
+
+ .bra, .eng {
+    cursor: pointer;
+ }
